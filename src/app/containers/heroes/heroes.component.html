@@ -1,0 +1,12 @@
+<h2>My Heroes</h2>
+
+ 
+
+<ul class="heroes"
+  *ngIf="heroes$ | async as heroes">
+  <li *ngFor="let hero of heroes">
+     
+      <span class="badge"> </span> {{hero.name}}
+      
+  </li>
+</ul>
